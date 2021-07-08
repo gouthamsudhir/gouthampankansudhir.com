@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    margin: auto;
+    max-width: 600px;
+    /* Here center text-align will not work as each word will get aligned to the center instead of starting from the right.*/
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link-primary {
+    color: white;
+    box-sizing: border-box;
+    background: rgb(255, 230, 0, 0.938);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
