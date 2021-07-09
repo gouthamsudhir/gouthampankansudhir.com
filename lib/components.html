@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link href="/style.css" rel="stylesheet">
     <title>gouthamsudhir | component library</title>
 </head>
+
 <body>
     <h1>goutham's component library</h1>
     <p>A component library for gouthamsudhir.com</p>
@@ -28,35 +30,35 @@
     <h2>@container</h2>
     <h3>fluid container</h3>
     <div class="container">This is a fluid container and this will go end to end.</div>
-    
+
     <h3>center container</h3>
     <div class="container container-center">This is a center container and this will be go in the center.</div>
     <hr>
 
     <h2>@links</h2>
     <a href="#" class="link link-primary">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a href="/" class="link link-secondary">Secondary Link</a>
     <!-- Note: Both empty #, empty /, and empty href tag do the same thing -->
     <hr>
 
     <h2>@lists</h2>
-    
+
     <h3>unordered lists</h3>
-    <ul>
+    <ul class="list-non-bullet">
         <li>Item A</li>
         <li>Item B</li>
         <li>Item C</li>
     </ul>
 
-    <h3>inline lists</h3>
-    <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
+    <h3>unordered inline lists</h3>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Item One</li>
+        <li class="list-item-inline">Item Two</li>
+        <li class="list-item-inline">Item Three</li>
     </ul>
 
     <h3>reverse ordered lists</h3>
-    <ol>
+    <ol reversed>
         <li>Milk</li>
         <li>Eggs</li>
         <li>Butter</li>
@@ -64,40 +66,46 @@
     <hr>
 
     <h2>@nav</h2>
-    <nav>
-        <ul>
-            <li>Top</li>
-            <li>Bottom</li>
+    <nav class="navigation container">
+        <h3 style="margin-left: 10px;">IAMGoutham</h3>
+        <ul class="list-non-bullet nav-list-item">
+            <li class="list-item-inline">home</li>
+            <li class="list-item-inline">projects</li>
+            <li class="list-item-inline">about</li>
         </ul>
     </nav>
     <hr>
 
     <h2>@header</h2>
-    <header>
-        <img src="/images/undraw_Code_thinking_re_gka2.svg" alt="Header Image">
-        <h1>heading inside header</h1>
+    <header class="hero">
+        <img class="hero-image" src="/images/hero-image.svg" alt="Header Image">
+        <h1 class="hero-text">goutham sudhir the <span class="span-primary">web developer</span></h1>
     </header>
     <hr>
 
     <h2>@section</h2>
-    <section>
-        <h3>normal section</h3>
-        <p>This section will normal background.</p>
+    <section class="section">
+        <div class="container-center container">
+            <h2>white section</h2>
+            <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+        </div>
     </section>
 
-    <section>
-        <h3>off white section</h3>
-        <p>This text will have an off white background.</p>
+    <section class="section section-off-white">
+        <div class="container container-center">
+            <h2>off white section</h2>
+            <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+        </div>
     </section>
     <hr>
 
     <h2>@footer</h2>
-    <footer>
+    <footer class="container footer">
         <div>Some heading inside footer</div>
-        <ul>
-            <li>Instagram</li>
-            <li>Github</li>
-            <li>Twitter</li>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">Instagram</li>
+            <li class="list-item-inline">Github</li>
+            <li class="list-item-inline">Twitter</li>
         </ul>
     </footer>
 
@@ -113,6 +121,7 @@
 
 
 
-    <div style="height: 30vh"></div>    
+    <div style="height: 30vh"></div>
 </body>
+
 </html>
