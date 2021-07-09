@@ -100,7 +100,8 @@ hr {
 
 .footer {
     background-color: var(--primary-color, gold);
-    padding: 2rem;
+    padding: 3rem;
     color: white;
     border-top-right-radius: 25px;
+    text-align: center;
 }
